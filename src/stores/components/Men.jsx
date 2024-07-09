@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Men = () => {
 
     const firstFiveImages = menData.slice(0,5)
-
+ 
   return (
     <>
      <div className="proTitle">

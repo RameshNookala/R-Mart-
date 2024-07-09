@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="navSection">
       <Link to='/' className="custom-link">
   <div className="title">
-    <h2>E-Mart</h2>
+    <h2>R-Mart</h2>
   </div>
 </Link>
 
@@ -24,10 +24,11 @@ const Navbar = () => {
           <div className="user-detail">SignIN/SignUp</div>
         </div>
           <Link to= '/cart'>
-          <div className="cart">Cart
-          <span>
-            {cartItems.length}
-          </span>
+          <div className="cart">Cart(
+             <span>
+                {cartItems.length}
+             </span>
+          )
           </div>
           </Link>
       </div>
@@ -64,7 +65,7 @@ const Navbar = () => {
           <Link to="/fridge" className="custom-link">
             <li>Fridge</li>
           </Link>
-          <Link to="/" className="custom-link">
+          <Link to="/book" className="custom-link">
             <li>Books</li>
           </Link>
 
@@ -79,7 +80,7 @@ const Navbar = () => {
           <Link to="/ac" className="custom-link">
             <li>AC</li>
           </Link>
-        </ul>
+        </ul> 
       </div>
     </div >
   );

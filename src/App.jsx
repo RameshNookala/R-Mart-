@@ -5,7 +5,6 @@ import { Routes, Route } from 'react-router-dom'
 
 import './App.css'
 import LandingPage from './stores/pages/LandingPage'
-import Kitchen from './stores/components/Kitchen'
 import MobilePage from './stores/pages/MobilePage'
 import CompPage from './stores/pages/CompPage'
 import WatchPage from './stores/pages/WatchPage'
@@ -25,6 +24,8 @@ import MenSingle from './stores/singles/MenSingle'
 import WatchSingle from './stores/singles/WatchSingle'
 import WomanSingle from './stores/singles/WomanSingle'
 import FridgeSingle from './stores/singles/FridgeSingle'
+import BookPage from './stores/pages/BookPage'
+import BookSingle from './stores/singles/BookSingle'
 
 
 const App = () => {
@@ -40,17 +41,23 @@ const App = () => {
         <Route path='/men' element= {<MenPage />} /> 
         <Route path='/woman' element= {<WomanPage />} />             
         <Route path='/furniture' element= {<FurniturePage />} />             
-        <Route path='/ac' element= {<AcPage />} />             
+        <Route path='/ac' element= {<AcPage />} /> 
+        <Route path='/book' element = {<BookPage /> } />
+
+
            <Route path='/mobiles/:id' element = {<MobileSingle />} />
-      <Route path='/cart' element = {<UserCart />} />
-      <Route path='/ac/:id' element = {<AcSingle />} />
-      <Route path='/computers/:id' element = {<ComputerSingle />} />
-      <Route path='/furniture/:id' element = {<FurnitureSingle />} />
-      <Route path='/kitchen/:id' element = {<KitchenSingle />} />
-      <Route path='/men/:id' element = {<MenSingle />} />
-      <Route path='/watch/:id' element = {<WatchSingle />} />
-      <Route path='/woman/:id' element = {<WomanSingle />} />
-      <Route path='/fridge/:id' element = {<FridgeSingle />} />
+           <Route path='/books/:id' element = {<BookSingle />} />
+           <Route path='/ac/:id' element = {<AcSingle />} />
+           <Route path='/computers/:id' element = {<ComputerSingle />} />
+           <Route path='/furniture/:id' element = {<FurnitureSingle />} />
+           <Route path='/kitchen/:id' element = {<KitchenSingle />} />
+           <Route path='/men/:id' element = {<MenSingle />} />
+           <Route path='/watch/:id' element = {<WatchSingle />} />
+           <Route path='/woman/:id' element = {<WomanSingle />} />
+           <Route path='/fridge/:id' element = {<FridgeSingle />} />
+
+        <Route path='/cart' element = {<UserCart />} />
+
       </Routes>
     </div>
   )
